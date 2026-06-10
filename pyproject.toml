@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lid-logit-calibrator"
+version = "0.1.0"
+description = "LID-based logit calibration for robust AI-generated image detection"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+  {name = "Anonymous"}
+]
+dependencies = [
+  "numpy",
+  "scipy",
+  "scikit-learn",
+  "torch",
+  "torchvision",
+  "tqdm",
+  "Pillow",
+  "matplotlib",
+  "opencv-python",
+  "torchattacks",
+  "clip-anytorch",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourname/lid-logit-calibrator"
+Repository = "https://github.com/yourname/lid-logit-calibrator"
+
+[tool.setuptools]
+py-modules = [
+  "extract_lid_features",
+  "train_logit_calibrator",
+  "lid_detection_pipeline",
+  "run_extract_then_train_calibrator",
+]

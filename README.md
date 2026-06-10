@@ -1,2 +1,0 @@
-# zhiyuanlu
-LIDCN
